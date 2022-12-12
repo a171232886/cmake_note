@@ -14,8 +14,15 @@ add_library(hello SHARED ${src_List})
 
 # 安装头文件
 # CMAKE_INSTALL_PREFIX 默认 /usr/local/
-install(FILES include/hello.h DESTINATION ${CMAKE_INSTALL_PREFIX}/include/hello/)
+# DIRECTORY之后
+# 若写include，会将整个include文件夹拷贝到 /usr/local/include/下
+# 效果/usr/local/include/include/hello.h
+# 若写include/,会将nclude文件夹下的内容拷贝到 /usr/local/include/下
+# 效果/usr/local/include/hello.h
+install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/include/)
 # 安装动态库
 install(TARGETS hello DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/)
 
 
+# 相当于g++命令
+# g++ TestLibrary.cpp -fPIC -shared -o libTestLibrary.so

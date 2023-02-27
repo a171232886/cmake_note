@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/demo/main.cpp.o CMakeFiles/main.dir/module2/src/p2.cpp.o  -o main 

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/zzz.h
+iostream
+-
+
+/home/wh/Desktop/learning/cmake_note/cmake9_target/src/main.cpp
+iostream
+-
+zzz.h
+/home/wh/Desktop/learning/cmake_note/cmake9_target/src/zzz.h
+

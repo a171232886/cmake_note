@@ -1,3 +1,0 @@
-/home/wh/Desktop/learning/cmake_note/test/build/CMakeFiles/rebuild_cache.dir
-/home/wh/Desktop/learning/cmake_note/test/build/CMakeFiles/edit_cache.dir
-/home/wh/Desktop/learning/cmake_note/test/build/CMakeFiles/main.dir

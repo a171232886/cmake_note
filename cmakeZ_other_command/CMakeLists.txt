@@ -18,3 +18,6 @@ set(src_list a.cpp b.cpp)
 # 注意是对src_list原内容进行覆盖，而不是添加
 file(GLOB src_list "src/*.cpp")
 message(${src_list})
+
+# 复制文件
+file(COPY src/c.cpp DESTINATION ${CMAKE_SOURCE_DIR}/build/)
